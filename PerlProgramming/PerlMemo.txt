@@ -1,0 +1,56 @@
+○perlプログラム
+「filename.pl」というファイル名
+
+
+○プログラムのチェック
+「perl -cw filename」というコマンドを実行するとプログラムの文法と識別子の利用方法のチェックを行ってくれる
+
+○プログラムの実行
+「perl filename」というコマンドを実行する
+
+○perlの実行順序
+1行ずつプログラムを読み込んで処理していく
+1行に複数のプログラムを記述することも可能
+1つの行に複数のプログラムが記述されている場合は左から右に順に実行される
+
+
+
+○perlプログラムについて
+/*** コメントの記述方法 ***/
+・通常は
+「#コメント」
+
+・複数行にわたるコメントも
+「#コメント」
+
+・POD（Plain Old Documentation）形式でコメントよりも複雑なことを記述
+「=pod
+コメント
+コメント
+=cut」
+
+
+/*** 厳密な構文チェック ***/
+・perlでプログラムを記述する上でプログラムの先頭に記述する
+use strict;
+use warnings;
+
+
+/*** 文字コードを指定する ***/
+・UTF-8を使用する
+use utf8;
+を冒頭に記述する
+
+・UTF-8で記述してもWindows環境で入力や画面出力が文字化けしないようにする
+use utf8;
+binmode STDIN, 'encoding(cp932)';
+binmode STDOUT, 'encoding(cp932)';
+binmode STDERR, 'encoding(cp932)';
+
+・Shift_JIS（cp932）を使用する
+use encoding "cp932"
+を記述する
+＊標準入力だけは明示的にシフトJISに設定しないといけない
+use encoding "cp932";
+binmode STDERR, ':encoding(cp932)';
+
