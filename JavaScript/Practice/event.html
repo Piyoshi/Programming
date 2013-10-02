@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScriptの勉強</title>
+</head>
+<body>
+	<h1>JavaScriptの勉強</h1>
+	<p><input type="button" value="クリック" id="myButton"></p>
+	<script>
+		var e = document.getElementById('myButton');
+		e.onclick = function () {
+			alert("クリックされました");
+		}
+
+		// タイマー処理
+		setTimeout(function(){
+			console.log("2秒たちました");
+		}, 2000);
+
+		var i = 0;
+		setInterval(function(){
+			console.log(i);
+			i++;
+		}, 1000);
+		
+
+	</script>
+</body>
+</html>

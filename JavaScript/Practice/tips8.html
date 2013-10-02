@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScriptの勉強</title>
+</head>
+<body>
+	<h1>JavaScriptの勉強</h1>
+	<div id="msg">Hello!</div>
+	<style>
+		.myStyle{
+			color: red;
+			font-weight: bold;
+			background: green;
+		}
+	</style>
+	<script>
+		var e = document.getElementById('msg');
+		/*
+		e.style.color = 'red';
+		e.style.fontWeight = 'bold';
+		e.style.background = 'green'
+		*/
+
+		e.className = 'myStyle';
+
+	</script>
+</body>
+</html>

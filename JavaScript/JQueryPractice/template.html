@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScriptの勉強</title>
+	<script src="jquery-2.0.2.min.js"></script>
+</head>
+<body>
+	<h1>JQueryの勉強</h1>
+	<div id="main">
+		<p>これは練習です。こちらは、<a href="http://google.com/">リンク</a>です。</p>
+		<ul>
+		<li>0番</li>
+		<li class="listitem">1番</li>
+		<li class="listitem">2番</li>
+		<li><a href="http://yahoo.com/">3番</a></li>
+		</ul>
+	</div>
+	<script>
+		$(document).ready(function(){
+			// jQueryのコードはこちらに
+			// セレクタ.メソッド
+			// id要素#
+			// class要素.
+			// 複数の要素,
+			// 親子要素>
+			// 子孫要素
+			$('.listitem, h1').css('color', 'red');
+		});
+	</script>
+</body>
+</html>

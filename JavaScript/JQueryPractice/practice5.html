@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScriptの勉強</title>
+	<script src="jquery-2.0.2.min.js"></script>
+</head>
+<body>
+	<h1>JQueryの勉強</h1>
+	<div id="main">
+		<p>これは練習です。こちらは、<a href="http://google.com/">リンク</a>です。</p>
+		<ul>
+		<li>0番</li>
+		<li class="listitem">1番</li>
+		<li class="listitem">2番</li>
+		<li><a href="http://yahoo.com/">3番</a></li>
+		</ul>
+		<input type="text" value="子猫" id="search"> <input type="submit" value="検索">
+	</div>
+	<script>
+		$(function(){
+			// セレクタ.メソッド
+			// .focus, .blur, .change
+			$('#search')
+				.focus(function(){
+					$(this).css('color', 'red');
+				})
+				.blur(function(){
+					$(this).css('color', 'black');
+				})
+				.change(function(){
+					alert('値がかわったよ');
+				})
+		});
+	</script>
+</body>
+</html>

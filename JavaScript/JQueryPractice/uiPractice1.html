@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+		<meta charset="utf-8">
+		<title>JQuery UIの練習</title>
+		<link rel="stylesheet" href="/Librally/css/smoothness/jquery-ui-1.10.3.custom.css">
+		<script src="/Librally/js/jquery-1.9.1.js"></script>
+		<script src="/Librally/js/jquery-ui-1.10.3.custom.min.js"></script>
+</head>
+<body>
+		<div id="box">box
+				<div class="handle">drag here</div>
+				<div class="cancel">not here</div>
+		</div>
+		<div id="target">target</div>
+		<style>
+		#box{
+			width: 100px;
+			height: 100px;
+			background: green;
+		}
+		#target{
+			width:150px;
+			height: 150px;
+			background: pink;
+		}
+	
+		.hover{ background:red; }
+
+		</style>
+		<script>
+			$(function(){
+				$("#box").draggable({
+				//	axis: 'x',
+					opacity: 0.5,
+				//	handle: '.handle'
+					cancel: '.cancel',
+					helper: 'clone'
+				});
+
+				$("#target").draggable().droppable({
+					accept: '#box',
+					hoverClass: 'hover',
+					tolerance: 'fit',
+					drop: function(event, ui){
+						ui.draggable.clone().appendTo(this);
+						console.log('dropped');
+					}
+				}).resizable();
+			});
+		</script>
+</body>
+</html>

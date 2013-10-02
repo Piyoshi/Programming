@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScriptの勉強</title>
+</head>
+<body>
+	<h1>JavaScriptの勉強</h1>
+	<script>
+		// コメントの書き方
+		/*
+		コメント
+		コメント
+		*/
+
+		// confirm
+		if(confirm("削除しますか？")){
+			alert("削除します");
+		}else{
+			alert("削除しません");
+		}
+
+		// prompt
+		var name =	prompt("あなたのお名前は？", "さとし");
+		alert('あなたのお名前は' + name + 'ですね');
+		
+		// 参考演算子
+		var sex = '';
+		var price = (sex == '男性') ? 5000 : 3000;
+
+		
+		
+	</script>
+</body>
+</html>

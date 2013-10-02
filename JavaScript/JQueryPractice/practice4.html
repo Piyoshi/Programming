@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScriptの勉強</title>
+	<script src="jquery-2.0.2.min.js"></script>
+	<style>
+		.font36{
+			font-size:36px;
+		}
+	</style>
+</head>
+<body>
+	<h1>JQueryの勉強</h1>
+	<div id="main">
+		<p>これは練習です。こちらは、<a href="http://google.com/">リンク</a>です。</p>
+		<ul>
+		<li>0番</li>
+		<li class="listitem">1番</li>
+		<li class="listitem">2番</li>
+		<li><a href="http://yahoo.com/">3番</a></li>
+		</ul>
+		<input type="text" value="子孫" id="serch"> <input type="submit" value="検索">
+	</div>
+	<script>
+		$(function(){
+			// セレクタ。メソッド
+			// .val
+			$('#serch').val('大猫');
+			console.log($('serch').val());
+			// .click
+			$('.lisitem').click(function(){
+				$(this).css('color', 'blue');
+			});
+			$('.listitem:eq(0)').click();
+
+			// .toggle
+			$('.listitem').toggle(
+				function(){
+					$(this).css('color' , 'blue');
+				},
+				function(){
+					$(this).css('color', 'black');
+				}
+			);
+
+			// .mouseover, .mouseout, .hover
+			/*
+			$('li').mouseover(function(){
+				$(this).addClass('font36');
+			})
+			.mouseout(function(){
+				$(this).removeClass('font36');
+			});
+			*/
+			$('li').hover(
+				function(){
+					$(this).addClass('font36');
+				},
+				function(){
+					$(this).removeClass('font36');
+				}
+			);
+		});
+		$(document).ready(function(){
+			// jQueryのコードはこちらに
+			// セレクタ.メソッド
+			// id要素#
+			// class要素.
+			// 複数の要素,
+			// 親子要素>
+			// 子孫要素
+			$('.listitem, h1').css('color', 'red');
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScriptの勉強</title>
+</head>
+<body>
+	<h1>JavaScriptの勉強</h1>
+	<script>
+		var i = 0;
+		var timerId	setInterval(function(){
+			console.log(++i);
+			if(i >= 5){
+				clearInterval(timerId)
+			}
+		}, 1000);
+
+		// 厳密は比較演算子
+		var a = 5;
+		var b = 5;
+		console.log(a === b);
+
+	</script>
+</body>
+</html>

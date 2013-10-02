@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScriptの勉強</title>
+	<script src="jquery-2.0.2.min.js"></script>
+</head>
+<body>
+	<h1>JQueryの勉強</h1>
+	<div id="main">
+		<p>これは練習です。こちらは、<a href="http://google.com/">リンク</a>です。</p>
+		<ul>
+		<li>0番</li>
+		<li class="listitem">1番</li>
+		<li class="listitem">2番</li>
+		<li><a href="http://yahoo.com/">3番</a></li>
+		</ul>
+		<input type="text" value="子猫" id="search"> <input type="submit" value="検索">
+	</div>
+	<script>
+		$(function(){
+			// セレクタ.メソッド
+			// .show / .hide
+			$('h1').hide(2000, function(){
+				alert('隠し終わりました');
+			})
+			.show(3000, function(){
+				alert('表示し終わりました');
+			});
+			
+		});
+	</script>
+</body>
+</html>

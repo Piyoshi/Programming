@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScriptの勉強</title>
+</head>
+<body>
+	<h1>JavaScriptの勉強</h1>
+	<script>
+		// 変数
+		var message;	// 文字列
+		message = "Hello World, Again!";
+		alert(message);
+
+		var d1 = 5;	// 数値
+		var d2 = false;	// 審議
+		var d3 = undefined;	// 定義されていない
+		var d4 = null;	// 何もない
+
+		// 文字列に関する演算子
+		var s = "hello" + "world";
+
+		// 条件分岐(if)
+		var score = 80;
+		
+		var direction = "right";
+		var x, y;
+		
+		switch(direction){
+			case "right":
+				x = x + 10;
+				break;
+			case "left"
+				x = x - 10;
+				break;
+
+			case "up"
+				y = y + 10;
+				break;
+
+			case "down"
+				y = y - 10;
+				break;
+			default:
+				// 例外処理
+				break;
+		}
+		
+		var i = 0;
+		while(i < 10){
+			console.log(i);
+			i++;
+		}
+		
+		for(var i = 0; i < 10; i++){
+			console.log(i);
+		}
+
+		// 関数
+		function sum(a, b){
+			return (a + b);
+		}
+
+		var result = sum(2, 44);
+		console.log(result);
+
+		// 配列
+		var sales = [100, 200, 150];
+		console.log(sales[2]);
+
+		// 連想配列
+		var sales2 = {'year2000':100, 'year2001':200, 'year2002':150}
+		console.log(sales2['year2001']);
+
+
+
+
+
+	</script>
+</body>
+</html>
+
+
+
