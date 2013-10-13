@@ -73,3 +73,6 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/uenosato
 
 !ENTRY org.eclipse.core.net 1 0 2013-10-13 14:06:25.567
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.aptana.git.core 4 0 2013-10-13 14:16:56.723
+!MESSAGE (Build 3.4.2.201308081805) [ERROR] com.aptana.git.core/debug Failed to stage files: Failed to acquire write lock for repo. Another process is still writing.
