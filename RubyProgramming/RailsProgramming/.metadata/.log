@@ -76,3 +76,23 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/uenosato
 
 !ENTRY com.aptana.git.core 4 0 2013-10-13 14:16:56.723
 !MESSAGE (Build 3.4.2.201308081805) [ERROR] com.aptana.git.core/debug Failed to stage files: Failed to acquire write lock for repo. Another process is still writing.
+!SESSION 2013-10-16 02:17:42.164 -----------------------------------------------
+eclipse.buildId=3.4.2.201308081805
+java.version=1.6.0_51
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=ja_JP
+Framework arguments:  -keyring /Users/uenosatoshi/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/uenosatoshi/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-10-16 02:17:55.275
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2013-10-16 02:26:56.646 -----------------------------------------------
+eclipse.buildId=3.4.2.201308081805
+java.version=1.6.0_51
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=ja_JP
+Framework arguments:  -keyring /Users/uenosatoshi/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/uenosatoshi/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-10-16 02:27:13.245
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="24" version="2.0">
+<workbench progressCount="43" version="2.0">
 <workbenchAdvisor/>
 <window height="874" maximized="true" width="1389" x="4" y="22">
 <fastViewData fastViewLocation="1024"/>
@@ -38,9 +38,13 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/myapp2/Gemfile"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="222" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="com.aptana.editor.ruby" name="production.rb" partName="production.rb" path="/Users/uenosatoshi/Desktop/ProgramingFolder/Github/Programming/RubyProgramming/RailsProgramming/myapp2/config/environments/production.rb" title="production.rb" tooltip="myapp2/config/environments/production.rb" workbook="DefaultEditorWorkbook">
+<editor id="com.aptana.editor.ruby" name="production.rb" partName="production.rb" path="/Users/uenosatoshi/Desktop/ProgramingFolder/Github/Programming/RubyProgramming/RailsProgramming/myapp2/config/environments/production.rb" title="production.rb" tooltip="myapp2/config/environments/production.rb" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/myapp2/config/environments/production.rb"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1041" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="com.aptana.editor.ruby" name="application_controller.rb" partName="application_controller.rb" path="/Users/uenosatoshi/Desktop/ProgramingFolder/Github/Programming/RubyProgramming/RailsProgramming/myapp2/app/controllers/application_controller.rb" title="application_controller.rb" tooltip="myapp2/app/controllers/application_controller.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/myapp2/app/controllers/application_controller.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -61,6 +65,12 @@
 </viewState>
 </view>
 <view id="com.aptana.samples.ui.SamplesView" partName="Samples"/>
+<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
+<viewState isPinned="false">
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
+</viewState>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
@@ -78,11 +88,14 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled="" activeProject="myapp2">
 <project name="myapp2">
 <expanded>
-<element path="/myapp2/config"/>
-<element path="/myapp2/config/environments"/>
+<element path="/myapp2/app"/>
+<element path="/myapp2/app/assets"/>
+<element path="/myapp2/app/controllers"/>
+<element path="/myapp2/app/views"/>
+<element path="/myapp2/app/views/layouts"/>
 </expanded>
 <selection>
-<element path="/myapp2/config/environments/production.rb"/>
+<element path="/myapp2/test"/>
 </selection>
 </project>
 </viewState>
@@ -91,7 +104,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="com.aptana.ui.WebPerspective">
+<perspectives activePart="com.aptana.explorer.view" activePerspective="com.aptana.ui.WebPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.aptana.ui.internal.WebPerspectiveFactory" id="com.aptana.ui.WebPerspective" label="Web"/>
 <alwaysOnActionSet id="com.aptana.browser.actionSet"/>
@@ -137,6 +150,7 @@
 <view id="com.aptana.terminal.views.terminal"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="com.aptana.terminal.views.terminal:myapp2"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="com.aptana.samples.ui.SamplesView"/>
 <view id="com.aptana.snippets.ui.views.SnippetsView"/>
@@ -163,11 +177,12 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.19966443" ratioLeft="238" ratioRight="954" relationship="2" relative="left"/>
 <info folder="true" part="terminalArea" ratio="0.74938875" ratioLeft="613" ratioRight="205" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="com.aptana.terminal.views.terminal" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="com.aptana.terminal.views.terminal" label="Terminal"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="com.aptana.terminal.views.terminal:myapp2" label="myapp2"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
 <page content="org.eclipse.pde.runtime.LogView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -175,6 +190,7 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
@@ -199,6 +215,8 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.ruby" path="/myapp2/Gemfile"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.ruby" path="/myapp2/config/environments/production.rb"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.ruby" path="/myapp2/Gemfile"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.ruby" path="/myapp2/app/controllers/application_controller.rb"/>
 </editors>
 <item historyLabel="Gemfile" index="0">
 <position info="not_deleted" x="0" y="0"/>
@@ -206,7 +224,16 @@
 <item historyLabel="Gemfile" index="0">
 <position info="not_deleted" x="222" y="0"/>
 </item>
-<item active="true" historyLabel="production.rb" index="1">
+<item historyLabel="production.rb" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Gemfile" index="2">
+<position info="not_deleted" x="222" y="0"/>
+</item>
+<item historyLabel="production.rb" index="1">
+<position info="not_deleted" x="1041" y="0"/>
+</item>
+<item active="true" historyLabel="application_controller.rb" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
@@ -226,6 +253,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.ruby" name="application_controller.rb" tooltip="myapp2/app/controllers/application_controller.rb">
+<persistable path="/myapp2/app/controllers/application_controller.rb"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.ruby" name="production.rb" tooltip="myapp2/config/environments/production.rb">
 <persistable path="/myapp2/config/environments/production.rb"/>
 </file>
