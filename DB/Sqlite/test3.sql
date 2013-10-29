@@ -11,3 +11,4 @@ insert into games (user_id, score) values (3, 140);
 insert into games (user_id, score) values (4, 140);
 insert into games (user_id, score) values (4, 10);
 insert into games (user_id, score) values (4, 100);
+insert into games (user_id, score) values (4, 1000)
