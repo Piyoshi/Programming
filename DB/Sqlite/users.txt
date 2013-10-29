@@ -1,0 +1,4 @@
+taguchi, 200
+sakaki,400
+yamashita, 120
+fkoji, 800
