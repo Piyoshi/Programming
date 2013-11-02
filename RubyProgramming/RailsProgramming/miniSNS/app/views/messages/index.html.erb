@@ -1,0 +1,47 @@
+<h1>Listing messages</h1>
+<%= content_tag 'p', "＊あなたがFriend登録したメンバーのメッセージです。" %>
+<% if @messages.present? then %>
+<% @messages.each do |message| %>
+	<div class="message_area">
+		<p class="member_name"><a href="/members/<%= message.member.id %>"><%= message.member.name %></a></p>
+		<p class="message_content"><%= link_to message.content, message %></p>
+		<p class="message_create">(<%= message.created_at.strftime '%Y-%m-%d %H:%M' %>)</p>
+	</div>
+	</tr>
+<% end %>
+<% end %>
+
+<p>page: <% if (@page.to_i - 1 > 0) %>
+	<%= link_to (@page.to_i - 1).to_s, :action => "index", :page => (@page.to_i - 1) %>/
+<% end %>
+<b><%= @page.to_s %></b>
+<% if (@page.to_i + 1) <= @max_page %>
+	/<%= link_to (@page.to_i + 1).to_s, :action => "index", :page => (@page.to_i + 1) %>
+<% end %></p>
+
+<!--
+<table>
+  <tr>
+    <th>Member</th>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @messages.each do |message| %>
+  <tr>
+    <td><%= message.member_id %></td>
+    <td><%= message.content %></td>
+    <td><%= link_to 'Show', message %></td>
+    <td><%= link_to 'Edit', edit_message_path(message) %></td>
+    <td><%= link_to 'Destroy', message, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+-->
+
+<%= link_to 'New Message', new_message_path %>
+<%= link_to 'members', {:controller => 'members', :action => 'index'} %>
