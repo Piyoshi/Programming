@@ -1,0 +1,19 @@
+CREATE TABLE emp (
+	emp_id INTEGER UNSIGNED PRIMARY KEY,
+	emp_name VARCHAR(50) NOT NULL,
+	emp_roman VARCHAR(50) NOT NULL,
+	emp_email VARCHAR(100) NOT NULL,
+	INDEX(emp_roman)
+);
+
+CREATE TABLE dept (
+	dept_id SMALLINT UNSIGNED PRIMARY KEY,
+	dept_name VARCHAR(50) NOT NULL,
+	dept_tel VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE emp_dept (
+	emp_id INTEGER UNSIGNED,
+	dept_id SMALLINT UNSIGNED,
+	PRIMARY KEY(emp_id, dept_id)
+);
