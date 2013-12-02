@@ -7,16 +7,16 @@ begin
 	puts A["test"]
 #=end
 	B = {	"test" => "test",
-			"test2" => 2,
-			"test3" => 3,
-			4 => "4"
-		}
+		"test2" => 2,
+		"test3" => 3,
+		4 => "4"
+	}
 	B["test5"] = 5
 	B[6] = 6
 	puts B
 =end
 	C = {:a => 6}
-	puts C
+	puts C[:a]
 rescue
 	puts "エラーが起ったので終了します"
 end
