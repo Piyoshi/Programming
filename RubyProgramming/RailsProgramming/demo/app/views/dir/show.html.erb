@@ -1,0 +1,13 @@
+<h1>Dir#show</h1>
+<p>Find me in app/views/dir/show.html.erb</p>
+<p>
+	files = <%= @files %>
+</p>
+<p>
+	<ul>
+	<% for file in @files %>
+		<li>ファイル名：<%= file %></li>
+	<% end %>
+	</ul>
+</p>
+
