@@ -8,7 +8,29 @@
 </head>
 <body class='<%= controller.controller_name %>'>
 
-<%= yield %>
+  <div id="banner">
+    <%= image_tag("logo.png") %>
+    <%= @page_title || "Pragmatic Bookshelf" %>
+  </div>
+
+  <div id="columns">
+    <div id="side">
+      <ul>
+        <li><a href="http://www....">ホーム</a></li>
+        <li><a href="http://www..../faq">よくある質問</a></li>
+        <li><a href="http://www..../news">ニュース</a></li>
+        <li><a href="http://www..../contact">お問い合わせ</a></li>
+      </ul>
+
+	  <div id="date">
+	    <p><%= @date %></p>
+	  </div>
+    </div>
+    <div id="main">
+      <%= yield %>
+    </div>
+  </div>
+
 
 </body>
 </html>
