@@ -1,5 +1,9 @@
 # coding: utf-8
 class Product < ActiveRecord::Base
+  has_many :line_items
+
+  before_destroy :ensure_not_referenced_by_any_line_item
+
   attr_accessible :description, :image_url, :price, :title
 
   validates :title, :description, :image_url, presence: true
@@ -9,5 +13,16 @@ class Product < ActiveRecord::Base
   	with:	 %r{\.(gif|jpg|png)$}i,
 	message: 'はGIF,JPG,PNG画像のURLでなければなりません'
   }
+
+  private
+    # この商品を参照している品目がないことを確認する
+    def ensure_ot_referenced_by_any_line_item
+	  if line_items.empty?
+	    return true
+	  else
+	    errors.add(:base, '品目が存在します')
+		return false
+	  end
+	end
 
 end
