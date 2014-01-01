@@ -16,3 +16,6 @@ Product.create(title: 'Programming Ruby 1.9',
   image_url: 'ruby.jpg',
   price: 49.95
 )
+
+User.delete_all
+User.create(name: 'root', password_digest: 'root')

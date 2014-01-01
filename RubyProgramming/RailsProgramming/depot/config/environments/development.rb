@@ -14,7 +14,10 @@ Depot::Application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send
-  config.action_mailer.raise_delivery_errors = false
+  #config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.delivery_method = :test
+  #config.action_mailer.smtp_settings = { address:"usususus3104@gmail.com",port:587,domain:"domain.of.sender.net",authentication:"plain",user_name:"usususus3104",password:"usususus3104",enable_starttls_auto:true}
+
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
