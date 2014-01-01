@@ -5,7 +5,8 @@
 <p id="notice"><%= notice %></p>
 <% end %>
 
-<h1>Pragmaticカタログ</h1>
+<h1><%= t('.title_html') %></h1>
+
 <% if @count>5 %>
 <h2><B><%= @count %></B>回目の訪問</h2>
 <% end %>
@@ -17,7 +18,7 @@
 	<%= sanitize(product.description) %>
 	<div class="price_line">
 	  <span class="price"><%= number_to_currency(product.price) %></span>
-	  <%= button_to 'カートに入れる', line_items_path(product_id: product), remote: true %>
+	  <%= button_to t('.add_html'), line_items_path(product_id: product), remote: true %>
 	</div>
   </div>
 <% end %>
